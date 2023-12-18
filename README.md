@@ -4,13 +4,13 @@ iCard.ir is a credit card system that serves as a credit system. this repository
 
 ## Key Technologies
 
-- **React:**
-- **TypeScript:**
-- **Webpack:**
-- **Tailwind CSS:**
+- **React**
+- **TypeScript**
+- **Webpack**
+- **Tailwind CSS**
 
 ## How to View
 
-- [Demo Link](http://icarts.ir/) (Live Demo)
+- [website](http://icarts.ir/) (Live Demo)
 
 Enjoy exploring iCard.ir!
