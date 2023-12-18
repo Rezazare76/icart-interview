@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+
+  client:
+    container_name: client-pro
+    image: client-pro
+    build:
+      target: production
+    ports:
+      - 3001:80

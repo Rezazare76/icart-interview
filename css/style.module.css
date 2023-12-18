@@ -1,0 +1,74 @@
+.card {
+  background: url("../../../../../assets/images/landing-card-bg.svg") no-repeat bottom;
+}
+
+.mainCard {
+  right: -300px;
+  transition: all 1s;
+}
+
+.mainCardIn {
+  right: 0px;
+  z-index: 1;
+}gJoin .select {
+  scale: 1.1;
+}
+.landingJoin .detailList li {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s, transform 0.5s;
+  animation: slideIn 1s ease-in-out forwards;
+}
+.landingJoin .detailList > li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.landingJoin .detailList > li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.landingJoin .detailList > li:nth-child(4) {
+  animation-delay: 0.4s;
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.landingJoin .mainCard {
+  right: -300px;
+  transition: all 1s;
+}
+.landingJoin .mainCardIn {
+  right: 0px;
+  z-index: 1;
+}ill: #fff;
+  height: 20px;
+  width: 20px;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.loading {
+  fill: #fff;
+  height: 20px;
+  width: 20px;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.toggle__input:checked + .toggle_track .toggle_indicator {
+  background: #2ecc71;
+  transform: translateX(30px);
+}
+
+.toggle__input:checked + .toggle_track {
+  border-color: #2ecc71;
+}
+
+.toggle__input:checked + .toggle_track .toggle_indicator .checkMark {
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+}

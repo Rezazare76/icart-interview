@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: iranYekanLight;
+  src: url("assets/fonts/iran-yekan-light.ttf");
+}
+@font-face {
+  font-family: iranYekanRegular;
+  src: url("assets/fonts/iran-yekan-regular.ttf");
+}
+
+@font-face {
+  font-family: iranYekanMedium;
+  src: url("assets/fonts/iran-yekan-medium.ttf");
+}
+
+@font-face {
+  font-family: iranYekanBold;
+  src: url("assets/fonts/iran-yekan-bold.ttf");
+}
+@font-face {
+  font-family: iranYekanBlack;
+  src: url("assets/fonts/iran-yekan-black.ttf");
+}
+@layer base {
+  html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+}
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #cccccc;
+}
+.glass {
+  background: radial-gradient(
+    111.89% 213.6% at 24.99% 43.36%,
+    rgba(51, 71, 255, 0.5) 0%,
+    rgba(223, 226, 255, 0.273625) 74.98%,
+    rgba(107, 122, 255, 0.5) 100%
+  );
+  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected, */
+}
+.css-137m4ck {
+  position: fixed !important;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0 0 1px 171px transparent, 0 0 0 3000px rgba(0, 0, 0, 0.51);
+  transition: none !important;
+  will-change: unset !important;
+  z-index: 1000;
+}
+.skeleton-box {
+  position: relative;
+  overflow: hidden;
+  background-color: #dddbdd;
+}
+.skeleton-box::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 0.2) 20%,
+    rgba(255, 255, 255, 0.5) 60%,
+    rgba(255, 255, 255, 0)
+  );
+  -webkit-animation: shimmer 2s infinite;
+  animation: shimmer 2s infinite;
+  content: "";
+}
+@-webkit-keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+.pulse {
+  animation: pulse 1s linear infinite;
+  animation-direction: alternate-reverse;
+}
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+.loading {
+  animation: rotate 4s linear infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.list li:last-child {
+  border-bottom: none;
+}
+textarea:focus-visible,
+input:focus-visible {
+  outline: unset;
+}
+.transition-all-1s {
+  transition: all 0.5s;
+}
+.pulse {
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow: 0 0 0 0px #fd4c4d;
+  }
+  100% {
+    box-shadow: 0 0 0 5px #fd4c4d00;
+  }
+}

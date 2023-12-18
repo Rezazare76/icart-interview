@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "esnext",
+    "jsx": "react-jsx",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowUmdGlobalAccess": true,
+
+    "baseUrl": "./src",
+    "paths": {
+      "*": ["*"]
+    }
+  },
+
+  "include": ["src", "declaration.d.ts"]
+}
